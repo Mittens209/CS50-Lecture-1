@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Google Search</a>
+  </nav>
+
+  <div class="advanced-form">
+    <h2>Advanced Search</h2>
+    <form action="https://www.google.com/search" method="GET">
+      <label>
+        Find pages with… “all these words:”
+        <input type="text" name="as_q">
+      </label>
+
+      <label>
+        Find pages with… “this exact word or phrase:”
+        <input type="text" name="as_epq">
+      </label>
+
+      <label>
+        Find pages with… “any of these words:”
+        <input type="text" name="as_oq">
+      </label>
+
+      <label>
+        Find pages with… “none of these words:”
+        <input type="text" name="as_eq">
+      </label>
+
+      <div class="button-container" style="text-align: right;">
+        <button type="submit" class="blue">Advanced Search</button>
+      </div>
+    </form>
+  </div>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+        const input = document.querySelector('input[type="text"]');
+        if (input) input.focus();
+    });
+    </script>
+
+</body>
+</html>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+    const input = document.querySelector('input[type="text"]');
+    if (input) input.focus();
+  });
+</script>

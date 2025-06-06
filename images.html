@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Google Search</a>
+  </nav>
+
+  <div class="logo">
+    <h1>Google Image Search</h1>
+  </div>
+
+  <form action="https://www.google.com/search" method="GET">
+    <div class="search-container">
+      <input type="text" name="q">
+    </div>
+    <div class="button-container">
+      <input type="hidden" name="tbm" value="isch">
+      <button type="submit">Image Search</button>
+    </div>
+  </form>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+        const input = document.querySelector('input[type="text"]');
+        if (input) input.focus();
+    });
+    </script>
+
+</body>
+</html>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+    const input = document.querySelector('input[type="text"]');
+    if (input) input.focus();
+  });
+</script>

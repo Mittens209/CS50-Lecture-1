@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="images.html">Image Search</a>
+    <a href="advanced.html">Advanced Search</a>
+  </nav>
+
+  <div class="logo">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google">
+  </div>
+
+    <form id="searchForm" action="https://www.google.com/search" method="GET">
+    <div class="search-container">
+        <input type="text" placeholder="Jeannoel Search" name="q" id="searchInput">
+    </div>
+    <div class="button-container">
+        <button type="submit">Google Search</button>
+        <button type="submit" name="btnI" value="I'm Feeling Lucky" id="luckyBtn">I'm Feeling Lucky</button>
+        <button type="submit">Google Search</button>
+    </div>
+    </form>
+    <script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+        const input = document.querySelector('input[type="text"]');
+        if (input) input.focus();
+    });
+    </script>
+
+</body>
+</html>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('loaded');
+    const input = document.querySelector('input[type="text"]');
+    if (input) input.focus();
+  });
+</script>
+
+<script>
+  document.getElementById('searchForm').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && e.shiftKey) {
+      const luckyBtn = document.getElementById('luckyBtn');
+      luckyBtn.click();
+    }
+  });
+</script>
